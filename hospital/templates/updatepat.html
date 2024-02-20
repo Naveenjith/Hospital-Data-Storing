@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATIENT update</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+            <label for="Fname">Fname</label>
+            <input type="text" name="Fname" id="Fname" value="{{datas.Fname}}" placeholder="enter your first name"> <BR></BR>
+            <label for="Lname">Lname</label>
+            <input type="text" name="Lname" id="Lname" value="{{datas.Lname}}" placeholder="enter your last name"><BR></BR>
+            <label for="Age">Age</label>
+            <input type="number" name="Age" value="{{datas.Age}}"><BR></BR>
+            <label for="Adress">Adress</label>
+            <input type="text" name="Adress" value="{{datas.Adress}}" placeholder="enter Adress"><BR></BR>
+            <label for="email">email</label>
+            <input type="email" name="email" value="{{datas.email}}" placeholder="enter your mail id"><BR></BR>
+            <label for="Disease">Disease</label>
+            <input type="text" name="Disease" value="{{datas.Disease}}" placeholder="enter Disease"><BR></BR>
+            <input type="submit" name="update">
+    </form>
+</body>
+</html>
